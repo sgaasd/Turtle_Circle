@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     ros::Publisher cmd_vel_pub = n.advertise<geometry_msgs::Twist>("/turtle1/cmd_vel", 1);
 
     geometry_msgs::Twist cmd_vel_message;
-    cmd_vel_message.angular.z = 1.0;
+    cmd_vel_message.angular.z = 20.0;
     cmd_vel_message.linear.x = 1.0;
 
     ros::Rate loop_rate(10);
